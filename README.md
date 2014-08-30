@@ -1,6 +1,6 @@
 # just-rails-web
 
-A website for intermediate Ruby on Rails users to compare programming practices, review gems and plugins, and otherwise talk shop in a non-combative and link-bait-free way.
+A website for intermediate Ruby on Rails users to compare programming practices, review gems, and otherwise talk shop in a non-combative and link-bait-free way.
 
 ### Why?
 
