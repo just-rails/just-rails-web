@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'signup', to: 'signup#index'
+  post 'signup', to: "signup#create", as: :new_signup
+
+  root 'splash#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

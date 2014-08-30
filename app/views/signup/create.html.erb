@@ -1,0 +1,11 @@
+<p id="thanks">Thanks. You are now being redirected to the main site.</p>
+
+<script>
+  setInterval(function() {
+    document.getElementById("thanks").innerHTML += "."
+  }, 1000);
+
+  setTimeout(function() {
+    window.location = "/";
+  }, 5000);
+</script>
