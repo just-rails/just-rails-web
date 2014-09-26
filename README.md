@@ -1,13 +1,21 @@
 # just-rails-web
 
-A website for intermediate Ruby on Rails users to compare programming practices, review gems, and otherwise talk shop in a non-combative and link-bait-free way.
+A website for intermediate Ruby on Rails users to compare programming practices, review gems, and otherwise talk shop.
 
 ### Why?
 
-Nowadays, most of the information available about Ruby on Rails on the web is aimed at beginners, and most of it is in the form of blog posts and articles. These formats encourage a highly opinionated and combative style of writing. Although this style is exciting for novices and makes for great link bait, it can be tiresome for experienced devs who just want friendly dialogue about tools and techniques.
+Nowadays, most of the information available about Ruby on Rails on the web is aimed at beginners, and most of it is in the form of blog posts and articles. The former creates an undue focus in the community on beginner-level concepts, and the latter encourages a combative and sensational style of writing.
+
+The combined effect of this is what I call "Rails: The Good Parts" - an
+environment where the loudest voices are the ones
+which most convincingly oppose conventional wisdom on topics popular among
+Rails novices.
+
+### What?
 
 The goal is to start a community that is free, cooperative, and focused on one
-thing: developing great Rails apps.
+thing: pushing the Rails framework to the limits to create exceptional web
+apps.
 
 ### How?
 
@@ -17,5 +25,7 @@ thing: developing great Rails apps.
 
 ### Content
 
-* Experience reports
+* User experience reports
 * Gem reviews
+* Requests for assistance on gems
+* ...
