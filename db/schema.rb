@@ -11,10 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140830135855) do
+ActiveRecord::Schema.define(version: 20141001153704) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "gem_reviews", force: true do |t|
+    t.string   "gem_github"
+    t.string   "gem_version"
+    t.integer  "concept_score"
+    t.text     "concept_details"
+    t.integer  "integration_score"
+    t.text     "integration_details"
+    t.integer  "maintenance_score"
+    t.text     "maintenance_details"
+    t.integer  "support_score"
+    t.text     "support_details"
+    t.integer  "learning_score"
+    t.text     "learning_details"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
 
   create_table "registrations", force: true do |t|
     t.string   "email"

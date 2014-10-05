@@ -37,6 +37,7 @@ GEM
     arel (6.0.0.beta1)
     binding_of_caller (0.7.3.pre1)
       debug_inspector (>= 0.0.1)
+    bootstrap_form (2.2.0)
     builder (3.2.2)
     byebug (3.3.0)
       columnize (~> 0.8)
@@ -52,6 +53,7 @@ GEM
     columnize (0.8.9)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
+    diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.1)
     globalid (0.2.3)
@@ -106,6 +108,22 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
+    rspec-core (3.1.4)
+      rspec-support (~> 3.1.0)
+    rspec-expectations (3.1.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.1.0)
+    rspec-mocks (3.1.1)
+      rspec-support (~> 3.1.0)
+    rspec-rails (3.1.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 3.1.0)
+      rspec-expectations (~> 3.1.0)
+      rspec-mocks (~> 3.1.0)
+      rspec-support (~> 3.1.0)
+    rspec-support (3.1.0)
     sass (3.4.2)
     sass-rails (5.0.0.beta1)
       railties (>= 4.0.0, < 5.0)
@@ -146,12 +164,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap_form
   byebug
   jbuilder (~> 2.0)
   jquery-rails
   pg
   rails (= 4.2.0.beta1)
   rails-html-sanitizer (~> 1.0)
+  rspec-rails
   sass-rails (~> 5.0.0.beta1)
   sdoc (~> 0.4.0)
   spring

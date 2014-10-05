@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :gem_reviews
+
   get 'signup', to: 'signup#index'
   post 'signup', to: "signup#create", as: :new_signup
 

@@ -1,0 +1,51 @@
+<%= bootstrap_form_for(@gem_review) do |f| %>
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-6", layout: :horizontal) do %>
+    <%= f.text_field :gem_github %>
+  <% end %>
+
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-6", layout: :horizontal) do %>
+    <%= f.text_field :gem_version %>
+  <% end %>
+
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-3", layout: :horizontal, class: "score-group") do %>
+    <%= gem_review_score_buttons(f, :concept_score, @gem_review.concept_score) %>
+  <% end %>
+
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-9", layout: :horizontal) do %>
+    <%= f.text_area :concept_details %>
+  <% end %>
+
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-2", layout: :horizontal) do %>
+    <%= f.number_field :integration_score %>
+  <% end %>
+
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-10", layout: :horizontal) do %>
+    <%= f.text_area :integration_details %>
+  <% end %>
+
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-2", layout: :horizontal) do %>
+    <%= f.number_field :maintenance_score %>
+  <% end %>
+
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-10", layout: :horizontal) do %>
+    <%= f.text_area :maintenance_details %>
+  <% end %>
+
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-2", layout: :horizontal) do %>
+    <%= f.number_field :learning_score %>
+  <% end %>
+
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-10", layout: :horizontal) do %>
+    <%= f.text_area :learning_details %>
+  <% end %>
+
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-2", layout: :horizontal) do %>
+    <%= f.number_field :support_score %>
+  <% end %>
+
+  <%= f.form_group(label_col: "col-sm-0", control_col: "col-sm-10", layout: :horizontal) do %>
+    <%= f.text_area :support_details %>
+  <% end %>
+
+  <%= f.submit "Save Review" %>
+<% end %>
